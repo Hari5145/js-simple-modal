@@ -1,0 +1,82 @@
+body {
+	font-size: 17px;
+	line-height: 1.6;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+.btn {
+	background: lightcoral;
+	border: none;
+	border-radius: 5px;
+	padding: 1em 2em;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background: darkslategrey;
+	color: white;
+	transition: 0.4s;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background-color: white;
+	margin: 20% auto;
+	width: 50%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+.closeBtn {
+	color: white;
+	float: right;
+	font-size: 30px;
+}
+
+.closeBtn:hover {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@keyframes modalopen {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 2;
+	}
+}
+
+.modal-header {
+	padding: 20px;
+	background: lightcoral;
+}
+
+.modal-header h2,
+.modal-footer h3 {
+	margin: 0;
+	text-align: center;
+}
+
+.modal-body {
+	padding: 10px 20px;
+}
+
+.modal-footer {
+	background: lightslategrey;
+	padding: 10px;
+}
